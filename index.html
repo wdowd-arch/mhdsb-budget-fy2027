@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FY2027 Select Board budget — The Marblehead Independent</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Georgia,serif}
+body{background:#FDF9F4;color:#1E1F21;padding:1.25rem;max-width:900px;margin:0 auto}
+.masthead{text-align:center;margin-bottom:1rem;border-bottom:2px solid #C2261D;padding-bottom:0.75rem}
+.masthead-name{font-size:15px;color:#1E1F21}
+.masthead-ind{font-size:12px;font-weight:700;letter-spacing:3px;color:#C2261D;text-transform:uppercase}
+.masthead-sub{font-size:13px;color:#1E1F21;margin-top:4px}
+.byline{font-size:11px;color:#1E1F21;margin-top:4px;letter-spacing:1.5px;font-weight:700}
+.metric-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:1rem}
+.metric{border:1px solid #ddd;border-radius:4px;padding:0.6rem 0.75rem;background:#fff}
+.metric-label{font-size:10px;color:#555;margin-bottom:2px;text-transform:uppercase;letter-spacing:0.5px;font-weight:700}
+.metric-val{font-size:20px;font-weight:700;color:#1E1F21}
+.metric-sub{font-size:11px;color:#555;margin-top:1px}
+.legend{display:flex;gap:14px;margin-bottom:6px;font-size:12px;color:#555;font-weight:700}
+.legend-dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+.chart-wrap{position:relative;width:100%;height:300px;margin-bottom:1rem;border:1px solid #ddd;border-radius:4px;padding:6px;background:#fff}
+.sec-title{font-size:15px;font-weight:700;margin:1rem 0 0.2rem;color:#1E1F21;text-align:center}
+.sec-hint{font-size:11px;color:#1E1F21;margin:2px 0 8px;text-align:center;font-weight:700}
+.hdr{font-size:10px;display:flex;padding:6px 10px;background:#1E1F21;color:#FDF9F4;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;border-radius:3px 3px 0 0}
+.hdr span:first-child{flex:1}
+.hdr span:nth-child(2){min-width:85px;text-align:right}
+.hdr span:nth-child(3){min-width:95px;text-align:right;margin-right:18px}
+.cat-row{display:flex;align-items:center;padding:7px 10px;border-bottom:1px solid #ddd;cursor:pointer;transition:background .12s;background:#fff}
+.cat-row:hover{background:#f8f5ef}
+.cat-name{font-size:13px;font-weight:700;flex:1;color:#1E1F21}
+.cat-fy27{font-size:13px;min-width:85px;text-align:right;color:#1E1F21}
+.cat-change{font-size:12px;min-width:95px;text-align:right;font-weight:700}
+.cat-arrow{font-size:10px;color:#999;margin-left:6px;transition:transform .2s}
+.cat-arrow.open{transform:rotate(90deg)}
+.dept-list{overflow:hidden;max-height:0;transition:max-height .35s ease}
+.dept-list.open{max-height:5000px}
+.dept-row{display:flex;align-items:center;padding:5px 10px 5px 24px;border-bottom:1px solid #eee;font-size:12px;color:#555;cursor:default;background:#FDF9F4}
+.dept-row:hover{background:#f8f5ef}
+.dept-row .cat-fy27,.dept-row .cat-change{font-size:12px}
+.pos{color:#375E97}
+.neg{color:#C2261D}
+.tt{position:fixed;z-index:999;background:#fff;border:1px solid #ccc;border-radius:4px;padding:10px 12px;font-family:Georgia,serif;font-size:11px;max-width:340px;pointer-events:none;opacity:0;transition:opacity .15s;line-height:1.6;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.tt-title{font-weight:700;font-size:13px;margin-bottom:6px;color:#1E1F21;border-bottom:1px solid #eee;padding-bottom:5px}
+.tt-line{display:flex;justify-content:space-between;gap:10px}
+.tt-item{color:#555}
+.tt-val{font-weight:700;white-space:nowrap;color:#1E1F21}
+.tt-sect{font-size:10px;font-weight:700;margin:8px 0 3px;text-transform:uppercase;letter-spacing:0.5px;border-top:1px solid #eee;padding-top:6px}
+.tt-sect.cuts{color:#C2261D}
+.tt-sect.adds{color:#375E97}
+.footer{margin-top:0.75rem;padding-top:0.5rem;border-top:1px solid #ddd;font-size:10px;color:#555;text-align:center}
+@media(max-width:600px){body{padding:0.75rem}.metric-row{grid-template-columns:1fr}.cat-name{font-size:12px}.cat-fy27{min-width:65px;font-size:12px}.cat-change{min-width:75px;font-size:11px}.dept-row{padding-left:14px}.tt{max-width:260px}}
+</style>
+</head>
+<body>
+<div class="masthead">
+  <div class="masthead-name">The Marblehead</div>
+  <div class="masthead-ind">Independent</div>
+  <div class="masthead-sub">FY2027 Select Board budget &mdash; voted March 19, 2026</div>
+  <div class="byline">BY WILL DOWD</div>
+</div>
+<div class="metric-row">
+  <div class="metric"><div class="metric-label">Total budget</div><div class="metric-val">$56.56 million</div><div class="metric-sub">All funds, FY2027</div></div>
+  <div class="metric"><div class="metric-label">Change from FY2026</div><div class="metric-val pos">+$4.80 million</div><div class="metric-sub">From $51.75 million</div></div>
+  <div class="metric"><div class="metric-label">Year over year</div><div class="metric-val pos">+9.3 percent</div><div class="metric-sub">Increase</div></div>
+</div>
+<div class="legend">
+  <span style="display:flex;align-items:center;gap:4px"><span class="legend-dot" style="background:#ccc"></span>FY2026 budget</span>
+  <span style="display:flex;align-items:center;gap:4px"><span class="legend-dot" style="background:#375E97"></span>FY2027 proposed</span>
+</div>
+<div class="chart-wrap"><canvas id="catChart"></canvas></div>
+<div class="sec-title">Department breakdown</div>
+<p class="sec-hint">Click a category to expand. Hover any department with an &#9432; to see line-item cuts and additions.</p>
+<div class="hdr"><span>Category / department</span><span>FY2027</span><span>Change</span></div>
+<div id="accordion"></div>
+<div class="footer">Source: Town of Marblehead FY2027 Select Board department budget, approved March 19, 2026</div>
+<div class="tt" id="tooltip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const data=[
+{name:'Other general government',fy26:22499072,fy27:24965092,depts:[
+{n:'Group insurance',fy26:15100893,fy27:16754748,tips:{cuts:[],adds:[{i:'Health insurance transfer (+$1.52 million)'},{i:'Medex insurance transfer (+$133,831)'}]}},
+{n:'Contributory retirement',fy26:5380625,fy27:5843360,tips:{cuts:[],adds:[{i:'Retirement fund assessment (+$462,735)'}]}},
+{n:'Other insurance',fy26:964554,fy27:999307,tips:{cuts:[],adds:[{i:'Insurance premiums (+$43,253)'}]}},
+{n:'Unemployment',fy26:0,fy27:576210,tips:{cuts:[],adds:[{i:'Unemployment compensation \u2014 new line item ($576,210)'}]}},
+{n:'Workers compensation/111F',fy26:398000,fy27:300338,tips:{cuts:[{i:'Transfer to WC/111F reduced (-$97,662)'}],adds:[]}},
+{n:'Medicare',fy26:280000,fy27:277629,tips:{cuts:[{i:'Medicare contribution (-$2,371)'}],adds:[]}},
+{n:'OPEB transfer',fy26:250000,fy27:0,tips:{cuts:[{i:'Transfer to OPEB trust eliminated (-$250,000)'}],adds:[]}},
+{n:'Salary reserve',fy26:50000,fy27:145000,tips:{cuts:[],adds:[{i:'Vacation owed reserve (+$95,000)'}]}},
+{n:'Street lighting',fy26:60000,fy27:60000,tips:{cuts:[],adds:[]}},
+{n:'Training',fy26:15000,fy27:0,tips:{cuts:[{i:'In-service training eliminated (-$15,000)'}],adds:[]}},
+{n:'Flex spending administration',fy26:0,fy27:8500,tips:{cuts:[],adds:[{i:'Flex admin charge \u2014 new line item ($8,500)'}]}}
+]},
+{name:'Public safety',fy26:11237760,fy27:11871711,depts:[
+{n:'Fire department',fy26:5561260,fy27:6016967,tips:{cuts:[],adds:[{i:'Overtime (+$119,608)'},{i:'Firefighter salaries (+$108,502)'},{i:'Sick bonus retirement \u2014 new ($63,887)'},{i:'EMT stipend (+$35,392)'},{i:'Captain salary (+$32,796)'},{i:'Uniform allowance (+$13,251)'}]}},
+{n:'Police department',fy26:4984687,fy27:5216914,tips:{cuts:[{i:'Small equipment (-$2,000)'}],adds:[{i:'Incentive pay (+$53,572)'},{i:'Post stipend \u2014 new ($35,303)'},{i:'Outside detail \u2014 new ($10,000)'},{i:'Overtime (+$6,120)'},{i:'Field training officer \u2014 new ($4,015)'}]}},
+{n:'Building inspection',fy26:687313,fy27:633330,tips:{cuts:[{i:'Assistant department head eliminated (-$282,620)'},{i:'Assistant department head No. 2 eliminated (-$109,036)'},{i:'Other professional and technical eliminated (-$52,500)'}],adds:[{i:'Electrical inspectors \u2014 new ($145,000)'},{i:'Local inspectors \u2014 new ($122,437)'},{i:'Plumbing inspectors \u2014 new ($106,388)'}]}},
+{n:'Sealer of weights and measures',fy26:2100,fy27:2100,tips:{cuts:[],adds:[]}},
+{n:'Animal inspector',fy26:2400,fy27:2400,tips:{cuts:[],adds:[]}}
+]},
+{name:'Debt service',fy26:9314141,fy27:11098398,depts:[
+{n:'Maturing debt',fy26:5955000,fy27:7251017,tips:{cuts:[],adds:[{i:'New bond principal payments (+$1.30 million)'}]}},
+{n:'Interest',fy26:3359141,fy27:3847381,tips:{cuts:[],adds:[{i:'Interest on new and existing bonds (+$488,240)'}]}}
+]},
+{name:'General government',fy26:4438990,fy27:4274467,depts:[
+{n:'Finance department',fy26:1688913,fy27:1778805,tips:{cuts:[{i:'Assistant department head eliminated (-$306,326)'},{i:'Computer equipment (-$31,707)'}],adds:[{i:'Assistant division head \u2014 new ($197,376)'},{i:'Division head (+$93,319)'},{i:'Information technology (+$69,772)'},{i:'Computer rental (+$65,460)'}]}},
+{n:'Town counsel',fy26:115000,fy27:278000,tips:{cuts:[],adds:[{i:'Legal services (+$163,000)'}]}},
+{n:'Select Board',fy26:700051,fy27:723176,tips:{cuts:[{i:'Assistant department head eliminated (-$136,807)'},{i:'Elected official expenses eliminated (-$5,500)'}],adds:[{i:'Chief procurement officer \u2014 new ($120,487)'},{i:'Civic events \u2014 new ($70,000)'},{i:'Repair and maintenance, office equipment (+$8,000)'}]}},
+{n:'Community development and planning',fy26:494402,fy27:203682,tips:{cuts:[{i:'Department head eliminated (-$127,950)'},{i:'Sustainability coordinator eliminated (-$79,445)'},{i:'Grant coordinator eliminated (-$79,064)'},{i:'Other professional and technical (-$11,000)'}],adds:[{i:'Planner (+$2,209)'}]}},
+{n:'Assessor',fy26:394221,fy27:388003,tips:{cuts:[{i:'Appraisers (-$13,000)'},{i:'Other professional and technical (-$17,000)'}],adds:[{i:'Information technology services (+$12,876)'},{i:'Department head salary (+$3,523)'}]}},
+{n:'Reserve fund',fy26:444000,fy27:414000,tips:{cuts:[{i:'Reserve transfer account (-$30,000)'}],adds:[]}},
+{n:'Human resources',fy26:294927,fy27:293480,tips:{cuts:[{i:'Senior clerk eliminated (-$64,252)'},{i:'Other professional and technical eliminated (-$11,000)'},{i:'Payroll manager (-$10,267)'}],adds:[{i:'Benefits coordinator \u2014 new ($81,000)'}]}},
+{n:'Public buildings',fy26:286826,fy27:178671,tips:{cuts:[{i:'Special labor I eliminated (-$118,282)'}],adds:[{i:'Repair and maintenance, alarm equipment (+$9,800)'}]}},
+{n:'Parking clerk',fy26:8400,fy27:8400,tips:{cuts:[],adds:[]}},
+{n:'Finance committee',fy26:6375,fy27:6375,tips:{cuts:[],adds:[]}},
+{n:'Planning board',fy26:5775,fy27:1775,tips:{cuts:[{i:'Legal eliminated (-$4,000)'}],adds:[]}},
+{n:'Moderator',fy26:100,fy27:100,tips:{cuts:[],adds:[]}}
+]},
+{name:'Public works and facilities',fy26:2406042,fy27:2474771,depts:[
+{n:'Public works (highway, tree, drains)',fy26:2301042,fy27:2369771,tips:{cuts:[{i:'Department head (-$85,575)'},{i:'Heavy equipment operator (-$169,989)'},{i:'Leader heavy equipment operator (-$137,615)'},{i:'Special labor I eliminated (-$45,000)'},{i:'Vacation bonus eliminated (-$60,000)'}],adds:[{i:'Specialized HEO \u2014 new ($138,508)'},{i:'Town engineer \u2014 new ($123,609)'},{i:'Working foreman, construction \u2014 new ($83,004)'},{i:'Assistant engineer \u2014 new ($73,988)'},{i:'Working foreman, maintenance \u2014 new ($72,595)'},{i:'Standby pay (+$80,195)'},{i:'Repair and maintenance, other equipment (+$20,800)'}]}},
+{n:'Snow removal',fy26:105000,fy27:105000,tips:{cuts:[],adds:[]}}
+]},
+{name:'Harbor enterprise fund',fy26:1276874,fy27:1319500,depts:[
+{n:'Harbor operations',fy26:1276874,fy27:1319500,tips:{cuts:[{i:'Harbor expense (-$222,949)'}],adds:[{i:'Harbor salaries (+$265,575)'}]}}
+]},
+{name:'Human services',fy26:571985,fy27:542249,depts:[
+{n:'Council on Aging',fy26:423460,fy27:387377,tips:{cuts:[{i:'Nutrition coordinator eliminated (-$59,118)'},{i:'Temporary special clerk eliminated (-$10,000)'}],adds:[{i:'Other miscellaneous expenses (+$10,000)'},{i:'Outreach worker (+$7,090)'},{i:'Transportation coordinator (+$6,074)'}]}},
+{n:'Veterans benefits',fy26:148525,fy27:154872,tips:{cuts:[],adds:[{i:'Flags (+$3,500)'},{i:'In-state travel (+$1,500)'},{i:'Miscellaneous office supplies (+$800)'}]}}
+]},
+{name:'Culture and recreation',fy26:7550,fy27:9500,depts:[
+{n:'Memorial and Veterans Day',fy26:7550,fy27:9500,tips:{cuts:[],adds:[{i:'Flags (+$1,800)'},{i:'Wreaths and flowers (+$150)'}]}}
+]}
+];
+const fmtShort=v=>{if(Math.abs(v)>=1e6)return'$'+(v/1e6).toFixed(2)+'M';if(Math.abs(v)>=1e3)return'$'+Math.round(v/1e3)+'K';return'$'+v};
+const fmt=v=>{if(Math.abs(v)>=1e6)return'$'+(v/1e6).toFixed(2)+' million';if(Math.abs(v)>=1e3)return'$'+Math.round(v).toLocaleString();return'$'+v};
+const fmtChg=v=>{const s=v>=0?'+':'-';if(Math.abs(v)>=1e6)return s+'$'+(Math.abs(v)/1e6).toFixed(2)+'M';if(Math.abs(v)>=1e3)return s+'$'+Math.round(Math.abs(v)/1e3)+'K';return s+'$'+Math.abs(v)};
+const pct=(c,b)=>b?((c/b)*100).toFixed(1)+'%':'new';
+const tt=document.getElementById('tooltip');let ttTimer;
+function showTT(e,dept){clearTimeout(ttTimer);const d=dept.tips;if(!d.cuts.length&&!d.adds.length){tt.style.opacity='0';return}let h='<div class="tt-title">'+dept.n+'</div>';h+='<div class="tt-line"><span class="tt-item">FY2026 budget</span><span class="tt-val">'+fmt(dept.fy26)+'</span></div>';h+='<div class="tt-line"><span class="tt-item">FY2027 proposed</span><span class="tt-val">'+fmt(dept.fy27)+'</span></div>';const chg=dept.fy27-dept.fy26;h+='<div class="tt-line" style="margin-bottom:2px"><span class="tt-item">Net change</span><span class="tt-val '+(chg>=0?'pos':'neg')+'">'+fmtChg(chg)+'</span></div>';if(d.cuts.length){h+='<div class="tt-sect cuts">Cuts and reductions</div>';d.cuts.forEach(c=>{h+='<div class="tt-item" style="padding:1px 0">'+c.i+'</div>'});}if(d.adds.length){h+='<div class="tt-sect adds">Additions and increases</div>';d.adds.forEach(a=>{h+='<div class="tt-item" style="padding:1px 0">'+a.i+'</div>'});}tt.innerHTML=h;tt.style.opacity='1';positionTT(e);}
+function positionTT(e){const r=tt.getBoundingClientRect();let x=e.clientX+16,y=e.clientY+12;if(x+r.width>window.innerWidth-12)x=e.clientX-r.width-16;if(y+r.height>window.innerHeight-12)y=e.clientY-r.height-12;tt.style.left=x+'px';tt.style.top=y+'px'}
+function hideTT(){ttTimer=setTimeout(()=>{tt.style.opacity='0'},120)}
+const acc=document.getElementById('accordion');
+data.forEach((cat,i)=>{const chg=cat.fy27-cat.fy26;const wrap=document.createElement('div');const catRow=document.createElement('div');catRow.className='cat-row';catRow.innerHTML='<span class="cat-name">'+cat.name+'</span><span class="cat-fy27">'+fmtShort(cat.fy27)+'</span><span class="cat-change '+(chg>=0?'pos':'neg')+'">'+fmtChg(chg)+' ('+pct(chg,cat.fy26)+')</span><span class="cat-arrow" id="arrow-'+i+'">&#9654;</span>';wrap.appendChild(catRow);const dl=document.createElement('div');dl.className='dept-list';dl.id='dl-'+i;cat.depts.forEach(d=>{const dc=d.fy27-d.fy26;const hasTips=d.tips.cuts.length||d.tips.adds.length;const dr=document.createElement('div');dr.className='dept-row';dr.innerHTML='<span class="cat-name" style="font-weight:400;color:#555">'+d.n+(hasTips?' <span style="color:#999;font-size:10px">&#9432;</span>':'')+'</span><span class="cat-fy27" style="color:#555">'+fmtShort(d.fy27)+'</span><span class="cat-change '+(dc>=0?'pos':'neg')+'" style="margin-right:18px">'+fmtChg(dc)+(d.fy26>0?' ('+pct(dc,d.fy26)+')':dc!==0?' (new)':'')+'</span>';if(hasTips){dr.addEventListener('mouseenter',e=>showTT(e,d));dr.addEventListener('mousemove',positionTT);dr.addEventListener('mouseleave',hideTT)}dl.appendChild(dr);});wrap.appendChild(dl);acc.appendChild(wrap);catRow.addEventListener('click',()=>{const open=dl.classList.toggle('open');document.getElementById('arrow-'+i).classList.toggle('open',open)});});
+new Chart(document.getElementById('catChart'),{type:'bar',data:{labels:data.map(d=>d.name),datasets:[{label:'FY2026',data:data.map(d=>d.fy26),backgroundColor:'#ccc',borderRadius:2,barPercentage:.75,categoryPercentage:.8},{label:'FY2027',data:data.map(d=>d.fy27),backgroundColor:'#375E97',borderRadius:2,barPercentage:.75,categoryPercentage:.8}]},options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{titleFont:{family:'Georgia,serif'},bodyFont:{family:'Georgia,serif'},callbacks:{label:ctx=>' '+ctx.dataset.label+': $'+(ctx.raw/1e6).toFixed(2)+' million'}}},scales:{x:{grid:{color:'rgba(0,0,0,.05)'},ticks:{callback:v=>'$'+(v/1e6)+'M',color:'#888',font:{size:11,family:'Georgia,serif'}}},y:{grid:{display:false},ticks:{color:'#1E1F21',font:{size:11,family:'Georgia,serif'}}}}}});
+</script>
+</body>
+</html>
