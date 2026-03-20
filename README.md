@@ -41,7 +41,3 @@ By Will Dowd | The Marblehead Independent | March 19, 2026
 ### License
 
 Content and code by Will Dowd / The Marblehead Independent. All rights reserved.
-
----
-
-*Put me to work, Marblehead.*
